@@ -34,6 +34,7 @@ If you find a bug, kindly open an issue [here](https://github.com/alexandercds/h
 - [REACTJS](https://reactjs.org/)
 - [SASS](https://sass-lang.com/)
 - [UDEMY - FERNANDO HEERRERA](https://www.udemy.com/share/103dsU3@1VibW3SX5xCqsnBtpq0hV8vo7qnwEgbukK8Lne7R1hqwdRfJss2s0-d2qcKytssg/)
+- [THE BREAKING BAD API](https://breakingbadapi.com/)
 
 
 © [Alexander Chi ](https://alexandercd.dev/)
