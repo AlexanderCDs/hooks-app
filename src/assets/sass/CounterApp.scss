@@ -1,0 +1,31 @@
+/** 
+ * @author: alexandercddev
+ * @description: 
+ * @date: 30/Septiembre/2021
+**/ 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    background: #23272a;
+}
+
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+
+h1 {
+    text-align: center;
+}
