@@ -48,12 +48,15 @@ export const MultipleCustomHooks = () => {
                     </>
                 )} 
                 <div className="stats">
-                    <button 
-                        className="btn btn-primary" 
-                        onClick={decrement}
-                    >
-                        Prev
-                    </button>  
+                    {counter == 1 && (
+                        <button 
+                            className="btn btn-primary" 
+                            onClick={decrement}
+                        >
+                            Prev
+                        </button>  
+                    )}
+                    
                     <button 
                         className="btn btn-primary" 
                         onClick={increment}
