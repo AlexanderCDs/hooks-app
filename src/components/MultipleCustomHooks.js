@@ -48,7 +48,7 @@ export const MultipleCustomHooks = () => {
                     </>
                 )} 
                 <div className="stats">
-                    {counter == 1 && (
+                    {counter > 1 && (
                         <button 
                             className="btn btn-primary" 
                             onClick={decrement}
