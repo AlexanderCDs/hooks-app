@@ -17,19 +17,19 @@ export const CounterWithCustomHook = () => {
             <hr></hr>
             <div className="stats">
                 <button 
-                    className="btn btn-primary" 
+                    className="btn btn-primary m-2" 
                     onClick={increment}
                 >
                     + 1
                 </button>
                 <button 
-                    className="btn btn-primary" 
+                    className="btn btn-primary m-2" 
                     onClick={reset}
                 >
                     Reset
                 </button>
                 <button 
-                    className="btn btn-primary" 
+                    className="btn btn-primary m-2" 
                     onClick={decrement}
                 >
                     - 1

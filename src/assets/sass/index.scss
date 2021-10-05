@@ -12,9 +12,11 @@ body {
 
 header {
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column;   
     color: #FFFF;
     background: #23272a;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 button {
