@@ -10,12 +10,12 @@ import { useCounter } from '../hooks/useCounter';
 export const MultipleCustomHooks = () => {
     const { state: counter, increment, decrement } = useCounter(1);
     const { loading, data } = useFetch(`https://www.breakingbadapi.com/api/characters/${counter}`); 
-    const { name, occupation, img, status, nickname, portrayed } = !!data && data[0]; // !!null == false, !null == true
+    const { name, occupation, img, status, nickname } = !!data && data[0]; // !!null == false, !null == true
     
     return (
-        <div className="container-350 animate__animated animate__backInDown">
+        <div className="animate__animated animate__backInDown">
             <h1>Breaking Bad API</h1>
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{width: '100%'}}>
                 {loading ? (   
                     <div className="alert alert-info text-center">
                         Loading...
@@ -41,8 +41,8 @@ export const MultipleCustomHooks = () => {
                         </div>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">Occupation</li>
-                            {occupation.map( value => (
-                                <li className="list-group-item">{ value }</li>
+                            {occupation.map( (value, index) => (
+                                <li key={'item-'+index} className="list-group-item">{ value }</li>
                             ))} 
                         </ul>
                     </>

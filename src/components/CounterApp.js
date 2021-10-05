@@ -3,8 +3,7 @@
  * @description: 
  * @date: 30/Septiembre/2021
 **/
-import React, { useState } from 'react';
-import '../assets/sass/CounterApp.scss';
+import React, { useState } from 'react'; 
 
 export const CounterApp = () => {
     const [state, setState] = useState({
@@ -23,7 +22,7 @@ export const CounterApp = () => {
     }
 
     return (
-        <>
+        <div className="animate__animated animate__backInDown">
             <h1>Counter1: { counter1 }</h1>
             <h1>Counter2: { counter2 }</h1>
             <hr/>
@@ -36,7 +35,7 @@ export const CounterApp = () => {
                 </button>  
             </div>
             <code>{JSON.stringify(state)}</code>
-        </>
+        </div>
     )
 };
 

@@ -24,7 +24,7 @@ export const FormWithCustomHook = () => {
         console.log(formValues)
     } 
     return (
-        <form onSubmit={handleSubmit} className="animate__animated animate__backInDown">
+        <form onSubmit={handleSubmit}  className="animate__animated animate__backInDown">
             <h1>Form with custom hook </h1>
             <hr/>
             <div className="form-group">

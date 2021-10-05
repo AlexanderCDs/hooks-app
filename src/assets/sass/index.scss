@@ -4,18 +4,21 @@
 }
 
 body { 
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    flex-direction: column;  
+    color: #FFFF;
+    background: #23272a;
+}
+
+header {
+    display: flex; 
+    flex-direction: column;  
     color: #FFFF;
     background: #23272a;
 }
 
 button {
-    margin: 5px;
+    width: 100%; 
 }
 
 .container-350 {
@@ -43,9 +46,15 @@ button {
     justify-content: flex-end;
 }
 
-@media screen and (min-width: 0px) and (max-width: 800px) {
-    body { 
-        width: 100%;
-        height: 100%;
-    }
+.container-div {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    margin: 20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

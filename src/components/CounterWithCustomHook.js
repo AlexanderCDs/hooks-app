@@ -11,7 +11,7 @@ export const CounterWithCustomHook = () => {
     const {state, increment, decrement, reset} = useCounter(100);
 
     return (
-        <>
+        <div className="animate__animated animate__backInDown">
             <h1>Counter with custom hook</h1>
             <h1>Counter { state }</h1>
             <hr></hr>
@@ -35,7 +35,7 @@ export const CounterWithCustomHook = () => {
                     - 1
                 </button>   
             </div> 
-        </>
+        </div>
     )
 };
 
