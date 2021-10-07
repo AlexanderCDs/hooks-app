@@ -3,12 +3,13 @@
  * @description: 
  * @date: 06/Octubre/2021
 **/
-import React, { useEffect, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import { toDoReducer } from '../containers/toDoReducer';
 
 import '../assets/sass/toDoReducer.scss';
 import ToDoList from './ToDoList';
 import ToDoAdd from './ToDoAdd';
+import { UserContext } from './UserContext';
  
 const init = () => {
     return JSON.parse(localStorage.getItem('toDo')) || [
@@ -22,6 +23,9 @@ const init = () => {
 
 export const ToDoReducer = () => {
     const [ toDo, dispath ] = useReducer(toDoReducer, [], init);
+
+    const user = useContext(UserContext);
+    console.info(user)
 
     useEffect(() => {
         localStorage.setItem('toDo', JSON.stringify(toDo));

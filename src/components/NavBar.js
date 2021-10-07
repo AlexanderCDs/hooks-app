@@ -4,7 +4,7 @@
  * @date: 04/Octubre/2021
 **/
 import React from 'react'
-import { Link } from 'react-router-dom'; 
+import { Link, NavLink } from 'react-router-dom'; 
 import { options } from '../utils/information';
 
 export const NavBar = () => {
@@ -18,13 +18,14 @@ export const NavBar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {options.map( (item, index) => (
                             <li className="nav-item" key={`link-${index}`} >
-                                <Link  
-                                    
+                                <NavLink   
+                                    exact
                                     to={item.to} 
+                                    activeClassName="active"
                                     className="nav-link" 
                                 >
                                     {item.text}
-                                </Link>
+                                </NavLink>
                             </li>
                         ))}  
                     </ul> 

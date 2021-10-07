@@ -18,15 +18,16 @@ import SimpleForm from '../components/SimpleForm';
 import ToDoReducer from '../components/ToDoReducer';
 
 export const options = [
+    
     {
         to: '/',
-        text: 'ToDo App',
-        component: ToDoReducer 
-    },
-    {
-        to: '/father',
         text: 'Father',
         component: Father 
+    },
+    {
+        to: '/todo-app',
+        text: 'ToDo App',
+        component: ToDoReducer 
     },
     {
         to: '/callback-hook',
