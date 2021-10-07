@@ -1,0 +1,24 @@
+
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-noBlock {
+    width: auto;
+}
+
+p {
+    cursor: pointer;
+    margin: 0px;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.form-inline {
+    display: flex;
+}

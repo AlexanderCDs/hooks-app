@@ -68,3 +68,5 @@ export const MultipleCustomHooks = () => {
         </div>
     )
 }
+
+export default MultipleCustomHooks;

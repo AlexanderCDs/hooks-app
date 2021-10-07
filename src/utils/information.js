@@ -11,12 +11,18 @@ import Layout from '../components/Layout';
 import FocusScreen from '../components/FocusScreen';
 import RefExample from '../components/RefExample';
 import FormWithCustomHook from '../components/FormWithCustomHook';
-import { MultipleCustomHooks } from '../components/MultipleCustomHooks'; 
+import MultipleCustomHooks from '../components/MultipleCustomHooks'; 
 import CounterApp from '../components/CounterApp';
 import CounterWithCustomHook from '../components/CounterWithCustomHook';
 import SimpleForm from '../components/SimpleForm'; 
+import ToDoReducer from '../components/ToDoReducer';
 
 export const options = [
+    {
+        to: '/',
+        text: 'ToDo App',
+        component: ToDoReducer 
+    },
     {
         to: '/father',
         text: 'Father',
