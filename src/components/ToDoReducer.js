@@ -49,21 +49,20 @@ export const ToDoReducer = () => {
     } 
 
     return (
-        <div 
-            style={{width: '100%'}}
+        <div   
             className="animate__animated animate__backInDown"
         >
             <h1>ToDo App ({ toDo.length })</h1>
             <hr></hr>
             <div className="row">
-                <div className="col-7" >
+                <div className="col-md-7" >
                     <ToDoList 
                         toDo={toDo}
                         handleDelete={handleDelete}
                         handleTogggle={handleTogggle}
                     />
                 </div>
-                <div className="col-5">
+                <div className="col-md-5">
                     <h4>Add ToDo</h4>
                     <hr></hr>
                     <ToDoAdd 

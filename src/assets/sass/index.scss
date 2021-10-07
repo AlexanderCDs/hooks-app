@@ -10,13 +10,11 @@ body {
     background: #23272a;
 }
 
-header {
+.container-div{
     display: flex; 
     flex-direction: column;   
     color: #FFFF;
-    background: #23272a;
-    margin-top: 10px;
-    margin-left: 10px;
+    background: #23272a;   
 }
 
 button {
@@ -47,20 +45,15 @@ button {
     display: flex;
     justify-content: flex-end;
 }
+  
+.card {
+    max-width: 290px;
+}
 
-.container-div {
-    display: flex;
+.row {
+    margin: 0px; 
 }
 
 main {
-    width: 100%;
-    margin: 20px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    max-width: 290px;
+    padding: 20px;
 }
