@@ -28,16 +28,20 @@ export const useFetch = (url) => {
         fetch( url )
             .then(response => response.json() )
             .then ( data => {
-                setTimeout( () => {
-                    if( isMounted.current ){
-                        setState({
-                            data,
-                            loading: false,
-                            error: null
-                        });
-                    }
-                }, 4000)
-                
+                if( isMounted.current ){
+                    setState({
+                        data,
+                        loading: false,
+                        error: null
+                    });
+                } 
+            })
+            .catch( () => {
+                setState({
+                    data: null,
+                    loading: false,
+                    error: 'Not load information'
+                })
             }); 
     }, [url]);
 
