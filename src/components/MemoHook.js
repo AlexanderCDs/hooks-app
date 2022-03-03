@@ -7,7 +7,7 @@ import React, { useMemo, useState } from 'react'
 import { useCounter } from '../hooks/useCounter'; 
 
 export const MemoHook = () => {
-    const { state: counter, increment } = useCounter( 5000 );
+    const { counter, increment } = useCounter( 5000 );
     const [show, setShow] = useState(true);
 
     const processHeavy = (iteration) => {

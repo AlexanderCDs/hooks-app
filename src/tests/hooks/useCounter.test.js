@@ -14,7 +14,7 @@ describe('Test useCounter', () => {
         
         const { result } = renderHook( () => useCounter() );
 
-        expect( result.current.state ).toBe( 10 );
+        expect( result.current.counter ).toBe( 10 );
         expect( typeof result.current.increment ).toBe( 'function' );
         expect( typeof result.current.decrement ).toBe( 'function' );
         expect( typeof result.current.reset ).toBe( 'function' );
@@ -23,7 +23,7 @@ describe('Test useCounter', () => {
     test('should counter 100', () => {  
         const { result } = renderHook( () => useCounter(value) );
 
-        expect( result.current.state ).toBe( value );  
+        expect( result.current.counter ).toBe( value );  
     });
     
     test('should increment in 1', () => {
@@ -35,8 +35,8 @@ describe('Test useCounter', () => {
         });
 
 
-        const { state } = result.current; 
-        expect( state ).toBe( 101 );
+        const { counter } = result.current; 
+        expect( counter ).toBe( 101 );
 
     });
 
@@ -49,8 +49,8 @@ describe('Test useCounter', () => {
             decrement(); 
         });  
 
-        const { state } = result.current; 
-        expect( state ).toBe( 99 );
+        const { counter } = result.current; 
+        expect( counter ).toBe( 99 );
 
     });
 
@@ -63,8 +63,8 @@ describe('Test useCounter', () => {
             reset();
         });   
 
-        const { state } = result.current; 
-        expect( state ).toBe( value );
+        const { counter } = result.current; 
+        expect( counter ).toBe( value );
     });
     
 });

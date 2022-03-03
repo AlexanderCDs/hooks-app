@@ -8,7 +8,7 @@ import { useFetch } from '../hooks/useFetch';
 import { useCounter } from '../hooks/useCounter';
 
 export const MultipleCustomHooks = () => {
-    const { state: counter, increment, decrement } = useCounter(1);
+    const { counter, increment, decrement } = useCounter(1);
     const { loading, data } = useFetch(`https://www.breakingbadapi.com/api/characters/${counter}`); 
     const { name, occupation, img, status, nickname } = !!data && data[0]; // !!null == false, !null == true
     
@@ -32,7 +32,7 @@ export const MultipleCustomHooks = () => {
                                
                                 
                             </div> 
-                            <p className="card-text">
+                            <p className="card-text nickname">
                                 {`Nickname: ${nickname}`}
                             </p> 
                             <p className="card-text">

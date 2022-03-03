@@ -8,7 +8,7 @@ import { useFetch } from '../hooks/useFetch';
 import { useCounter } from '../hooks/useCounter';
 
 export const Layout = () => {
-    const { state: counter, increment, decrement } = useCounter(1);
+    const { counter, increment, decrement } = useCounter(1);
     const { data } = useFetch(`https://www.breakingbadapi.com/api/characters/${counter}`); 
     const { img } = !!data && data[0]; // !!null == false, !null == true
     

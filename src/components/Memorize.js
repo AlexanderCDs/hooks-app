@@ -8,7 +8,7 @@ import { useCounter } from '../hooks/useCounter';
 import { Small } from './Small';
 
 export const Memorize = () => {
-    const { state: counter, increment } = useCounter( 10 );
+    const {  counter, increment } = useCounter( 10 );
     const [show, setShow] = useState(true);
 
     return (

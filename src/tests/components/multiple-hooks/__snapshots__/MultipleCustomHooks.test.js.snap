@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in MultipleCustomHooks should show sucess 1`] = `
+<div
+  className="animate__animated animate__backInDown"
+>
+  <h1>
+    Breaking Bad API
+  </h1>
+  <div
+    className="card"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="alert alert-info text-center"
+    >
+      Loading...
+    </div>
+    <div
+      className="stats"
+    >
+      <button
+        className="btn btn-primary m-2"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
